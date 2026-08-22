@@ -263,4 +263,3 @@
 // 9. Create a pure function for subtraction.
 
 // 10. Create an impure function using global variable modification. 
-// hy
