@@ -314,7 +314,7 @@
 // for (var characters of v){
 //     if(vowel.includes(characters)){
 //         count++
-        
+
 //     }
 // } 
 // console.log(count);
@@ -358,3 +358,265 @@
 
 // var merge = [...D,100,200,...F]
 // console.log(merge);
+
+
+
+
+
+
+
+// FOR EACH
+// You are given an array of prices.
+
+// Print each price with `"₹"` before it.
+
+
+
+
+// var prices = [100, 250, 399, 499];
+
+// prices.forEach(function(elem){
+//     console.log('₹'+ elem);
+    
+// })
+
+
+
+
+//[ Q. You are given an array of students.
+
+// Print:
+
+// - `"Pass"` if marks are greater than 50
+// - `"Fail"` otherwise ]
+
+
+// sol:
+// var students =[
+// { name: "Anubhav", marks: 85 },
+// { name: "Rahul", marks: 42 },
+// { name: "Aman", marks: 90 },
+// ]
+
+// students.forEach(function(elem){
+
+//     if(elem.marks>50){
+//     console.log(elem.name,"pass");
+//     }else{
+//         console.log(elem.name,"fail");
+
+//     }
+// })
+
+
+
+
+
+
+// # `map()`
+
+// Convert all names into uppercase.
+
+
+// var names = ["anubhav", "rahul", "aman"];
+
+// names.map(function(elem){
+//     console.log(elem.toUpperCase());
+// })
+
+
+
+// Create a new array where:***
+
+// - Every product has a new property `discountPrice`
+// - Discount is 10%
+
+// var products = [
+// { name: "Laptop", price: 50000 },
+// { name: "Phone", price: 20000 },
+// ];
+
+// var new_products = products.map(function(elem){
+//     return{
+//         name: elem.name,
+//         price:elem.price,
+//         discountedPrice: elem.price-elem.price*(10/100)
+
+//     }
+// })
+// console.log(new_products);
+
+
+
+
+
+
+
+// #Filter
+
+// Filter all even numbers.
+
+// var num = [1,2,3,4,5,6,7,8];
+// var even_num=num.filter(function(even){
+//     return even%2==0;
+// })
+// console.log(even_num);
+
+
+// You are given users.
+
+// Return only active users.
+
+// let users = [
+//     { name: "Anubhav", active: true },
+//     { name: "Rahul", active: false },
+//     { name: "Aman", active: true },
+// ];
+// var active_user=users.filter(function(el){
+//     return el.active
+// })
+// console.log(active_user);
+
+
+
+
+
+
+// # `reduce()`
+
+// Find total sum of array.
+
+
+// let nums = [10,20,30,40];
+// var sum = nums.reduce(function(sum,elem){
+//     return sum= sum+elem
+// },0)
+// console.log(sum);
+
+
+// Count frequency of elements.***
+
+
+// let fruits = ["apple", "banana", "apple", "orange", "banana", "apple"];
+// var freq=fruits.reduce(function(acc,elem){
+//     if(acc[elem]){
+//         acc[elem]++;
+//     }else{
+//         acc[elem]=1;
+//     }
+//     return acc
+// },{})
+// console.log(freq);
+
+
+
+
+// # `find()`
+
+// Find first number greater than 50.
+
+
+// let num = [20, 35, 60, 80];
+// var greater_num=num.find(function(elem){
+//     return elem>50
+// })
+// console.log(greater_num);
+
+
+
+// Find a user with username `"admin"`.
+
+
+// let user = [
+//     { username: "rahul" },
+//     { username: "admin" },
+//     { username: "aman" }
+// ];
+
+// var username = user.find(function(elem){
+//     return elem.username ==="admin"
+// })
+// console.log(username);
+
+
+
+
+
+// findIndex()
+
+// Find index of number `90`.
+
+// let n = [10, 40, 90, 50];
+// var index=n.findIndex(function(elem){
+//     return elem===(90)
+// })
+// console.log(index);  
+
+
+// Find index of first failed student.
+
+
+// let students = [
+//     { name: "A", marks: 90 },
+//     { name: "B", marks: 30 },
+//     { name: "C", marks: 70 },
+// ];
+// var idx_faild=students.findIndex(function(elem){
+//     return elem.marks<33
+// })
+// console.log(idx_faild);
+
+
+
+
+// # `some()`
+// Check if any number is negative.
+
+
+// let x = [10, 20, -5, 40];
+// var Nev=x.some(function(elem){
+//     return elem<0
+// })
+// console.log(Nev);
+
+
+// Check if any product is out of stock.
+
+
+// let products = [
+//     { name: "Laptop", stock: 5 },
+//     { name: "Phone", stock: 0 },
+// ];
+// var out_of_stock=products.some(function(elem){
+//     return elem.stock===0
+// })
+//     console.log(out_of_stock);
+    
+
+
+
+    // # `every()`
+
+// Check if all numbers are positive.
+
+
+// let A = [10, 20, 30, 40];
+
+// var posi= A.every(function(elem){
+//     return elem>0
+// })
+// console.log(posi);
+
+
+// Check if all students passed.
+
+
+// let student = [
+//     { name: "A", marks: 80 },
+//     { name: "B", marks: 45 },
+//     { name: "C", marks: 60 },
+// ];
+// var pass= student.every(function(elem){
+//     return elem.marks>40
+// })
+// console.log(pass);
