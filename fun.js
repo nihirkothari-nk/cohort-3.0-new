@@ -133,15 +133,15 @@
 
 
 // // 7. Write a function that returns the greater of two numbers.
-// // compare = function(a,b){
-// //     if(a>b){
-// //         console.log( a ,"is greater");
-// //         }else{
-// //             console.log(b ,"is greater");
-// //         }
+// compare = function(a,b){
+//     if(a>b){
+//         console.log( a ,"is greater");
+//         }else{
+//             console.log(b ,"is greater");
+//         }
 
-// //     }
-// // compare(5,6)
+//     }
+// compare(5,6)
 
 
 // compare = function(a,b){

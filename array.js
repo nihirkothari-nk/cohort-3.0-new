@@ -591,11 +591,11 @@
 //     return elem.stock===0
 // })
 //     console.log(out_of_stock);
-    
 
 
 
-    // # `every()`
+
+// # `every()`
 
 // Check if all numbers are positive.
 
@@ -617,6 +617,6 @@
 //     { name: "C", marks: 60 },
 // ];
 // var pass= student.every(function(elem){
-//     return elem.marks>40
+//     return elem.marks>=40
 // })
 // console.log(pass);

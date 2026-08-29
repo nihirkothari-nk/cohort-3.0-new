@@ -127,3 +127,270 @@
 // 10. Print the first character of a string.
 
 // 11. Use template literals to print:`"My name is Aman and I am 20 years old"` 
+
+
+
+
+// EXTRA PRACTICE SESSION QUE 
+
+// Arrays
+// Question 1 (Easy) — Find Expensive Products
+// Create a new array containing only prices greater than 300.
+
+
+
+// let prices= [100,250,500,150,700];
+
+// var arr2= prices.filter(function(prices){
+//     return prices>300
+// })
+
+//     console.log(arr2);      
+    
+
+// Question 2 (Moderate) — Student Average
+// Calculate the average marks of all students.
+
+// let marks= [80,90,70,85,95];
+
+
+// var total_marks = marks.reduce(function(acc,elem){
+//     return acc + elem   
+// },0)
+
+// var avg = total_marks/marks.length
+
+// console.log(avg);
+
+
+
+// Question 3 (Hard) — Most Frequent Number
+// Find the number that appears the most.
+
+
+// var numbers= [1,2,3,2,4,2,5,1,1,1];
+
+// var repeated = numbers.reduce(function(acc,elem){
+//     if(acc[elem]){
+//     acc[elem]++
+//     }else{
+//     acc[elem]= 1
+//     }
+//         return acc;
+// },{});
+
+// var max = 0;
+// var highest;
+
+// for (var key in repeated) {
+//     if (repeated[key] > max) {
+//         max = repeated[key];
+//         highest = key;
+//     }
+// }
+
+// console.log(highest);
+
+
+
+// 🟢 Objects
+// Question 4 (Easy) — Update User Age
+
+
+// letuser= {
+// name:"Ritik",
+// age:20
+// };
+
+// letuser.age=21
+
+// console.log(letuser);
+
+
+// Print User Information using loop
+
+
+// with using for...in
+// var user= {
+// name:"Ritik",
+// age:20,
+// city:"Bhopal"
+// };
+
+// for(var details in user){
+//     console.log(details,user[details]);
+// }
+
+
+// second way with using for...of
+// var user = {
+//     name: "Ritik",
+//     age: 20,
+//     city: "Bhopal"
+// };
+
+// for (var [key, value] of Object.entries(user)) {
+//     console.log(key, value);
+// }
+
+
+
+
+// highest paid employee
+
+// let employees = {
+//     aman:25000,
+//     ritik:50000,
+//     priya:45000
+// }
+// var highest_salary = Object.entries(employees).reduce(function(acc,elem){
+//     if (acc[1]>elem[1]){
+//         return acc
+//     }else{
+//         return elem
+//     }
+
+// },["",0])
+// console.log(highest_salary);
+
+
+
+
+
+
+// 🟢 Functions
+// Question 7 (Easy) — Greeting Function
+// Create a function:
+
+
+// var greet = function(g){
+//     console.log(g);
+    
+// }
+// greet("Hello MR.Nihir")
+
+
+
+// Discount Calculator
+// Create a function:
+// calculateDiscount(price)
+
+// function calculateDiscount(price) {
+//     return price - price * 0.1;
+// }
+
+// var p = Number(prompt("Enter your price:"));
+
+// console.log(calculateDiscount(p));
+
+
+
+
+// Dynamic Sum Function(****)
+// Functions
+// Rest Parameters
+// reduce()
+
+// function sum(...elem) {
+//     return elem.reduce(function(acc, value) {
+//         return acc + value;
+//     }, 0);
+// }
+
+// console.log(sum(2, 3));
+
+
+
+
+
+// Arrays + Objects + Functions Together
+// These are the most important because real projects use all three together.
+
+// 🟢Arrays 7
+
+// Question 10 (Easy) — Find Adult Users
+let users= [
+{ name:"Ritik", age:20 },
+{ name:"Aman", age:16 },
+{ name:"Priya", age:25 }
+];
+
+
+var Adult = users.filter(function(users){
+    return users.age>18
+
+})
+
+console.log(Adult);
+
+
+
+
+// Shopping Cart Total
+// Array of objects
+// Functions
+// reduce()
+
+let cart= [
+{ name:"Mouse", price:500, qty:2 },
+{ name:"Keyboard", price:1000, qty:1 },
+{ name:"Monitor", price:10000, qty:1 }
+];
+
+
+
+var bill = cart.reduce(function(acc,elem){
+        return acc + elem.price * elem.qty
+    },0)
+
+console.log(bill)
+
+
+
+
+// Question 12 (Hard) — Student Grade Report
+
+// [
+// {
+// name:"Ritik",
+// average:85,                                     
+// grade:"A"
+// },
+// {
+// name:"Aman",
+// average:50,
+// grade:"C"
+// }
+// ]
+
+
+
+
+// Arrays
+// Nested Arrays
+// Objects
+// Functions
+// map()
+// reduce()
+// Conditional Logic
+
+
+let students= [
+
+{
+    name:"Ritik",
+    marks: [80,90,85]
+},
+
+{
+    name:"Aman",
+    marks: [50,40,60]
+}
+
+];
+
+var result = students.map(function(students)){
+    return result
+}
+
+console.log(map(result));
