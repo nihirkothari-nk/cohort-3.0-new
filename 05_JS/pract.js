@@ -309,19 +309,19 @@
 // 🟢Arrays 7
 
 // Question 10 (Easy) — Find Adult Users
-let users= [
-{ name:"Ritik", age:20 },
-{ name:"Aman", age:16 },
-{ name:"Priya", age:25 }
-];
+// let users= [
+// { name:"Ritik", age:20 },
+// { name:"Aman", age:16 },
+// { name:"Priya", age:25 }
+// ];
 
 
-var Adult = users.filter(function(users){
-    return users.age>18
+// var Adult = users.filter(function(users){
+//     return users.age>18
 
-})
+// })
 
-console.log(Adult);
+// console.log(Adult);
 
 
 
@@ -331,19 +331,19 @@ console.log(Adult);
 // Functions
 // reduce()
 
-let cart= [
-{ name:"Mouse", price:500, qty:2 },
-{ name:"Keyboard", price:1000, qty:1 },
-{ name:"Monitor", price:10000, qty:1 }
-];
+// let cart= [
+// { name:"Mouse", price:500, qty:2 },
+// { name:"Keyboard", price:1000, qty:1 },
+// { name:"Monitor", price:10000, qty:1 }
+// ];
 
 
 
-var bill = cart.reduce(function(acc,elem){
-        return acc + elem.price * elem.qty
-    },0)
+// var bill = cart.reduce(function(acc,elem){
+//         return acc + elem.price * elem.qty
+//     },0)
 
-console.log(bill)
+// console.log(bill)
 
 
 
@@ -375,22 +375,22 @@ console.log(bill)
 // Conditional Logic
 
 
-let students= [
+// let students= [
 
-{
-    name:"Ritik",
-    marks: [80,90,85]
-},
+// {
+//     name:"Ritik",
+//     marks: [80,90,85]
+// },
 
-{
-    name:"Aman",
-    marks: [50,40,60]
-}
+// {
+//     name:"Aman",
+//     marks: [50,40,60]
+// }
 
-];
+// ];
 
-var result = students.map(function(students)){
-    return result
-}
+// var result = students.map(function(students)){
+//     return result
+// }
 
-console.log(map(result));
+// console.log(map(result));

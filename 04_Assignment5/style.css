@@ -1,0 +1,40 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 100%;
+    
+}
+
+nav{
+    background-color: aqua;
+    height: 120px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40%;
+}
+
+.logo img{
+    height: 100px;
+    
+}
+
+.options{
+    background-color: antiquewhite;
+    height:100%;
+    width: 10%;
+}
