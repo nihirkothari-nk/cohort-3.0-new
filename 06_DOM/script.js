@@ -19,5 +19,5 @@
 
 //so we use universal selecter and that is queryselector
 
-const h11 = document.querySelector(" #name ");
-console.log(h1);
+// const h11 = document.querySelector(" #name ");
+// console.log(h1);
