@@ -2,7 +2,6 @@ const inp = document.querySelector("input")
 const btn = document.querySelector("#add") 
 const todo= document.querySelector(".TO_DO_LIST")
 
-
 btn.addEventListener('click',()=>{
     const value = inp.value;
 
@@ -17,4 +16,10 @@ btn.addEventListener('click',()=>{
                 </div>  
             </div>`;
         inp.value ="";
-});
+}); 
+
+todo.addEventListener('click',(e)=>{
+
+    if (e.target.classList.contains("edit")) 
+        console.log(`${value}`);
+})
