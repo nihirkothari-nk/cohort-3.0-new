@@ -21,6 +21,7 @@ const randomColor = (()=>{
 })
 
 const randomBox = (()=>{
+        isClicked = false;
         box.style.backgroundColor = randomColor();
         main.append(box)
 
@@ -47,19 +48,30 @@ interval = setInterval(() => {
 
 setTimeout(() => {
     clearInterval(interval)
+
     overlay.style.display = "flex"
+
+        setTimeout(()=>{
+            overlay.style.display = "none"
+            
+            time = 0;
+            score = 0;
+
+            timer.textContent = time;
+            scores.textContent = score;
+
+            box.remove()
+        },3000)
+
 }, 10000);
 
 })
 
 box.addEventListener("click",()=>{
-    score += 1;
-    scores.textContent = score;
+    if (isClicked === false) {
+        score += 1;
+        scores.textContent = score;
+
+        isClicked = true; // Lock after first click
+    }
 });
-
-
-
-
-//task to apply are 
-// 1:hide game over after 3 sec and rest all again
-// 2:count only one time on the box
