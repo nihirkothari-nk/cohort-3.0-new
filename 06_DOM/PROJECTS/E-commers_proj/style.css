@@ -24,14 +24,16 @@ nav{
     justify-content: space-between;
     height: 10%;
     width: 100%;
-    background-color: rgba(221, 221, 37, 0.726);
+    background-color: rgba(190, 221, 37, 0.653);
     padding: 10px;
     border: 2px solid black;
     border-radius: 20px;
 }
 
+
 button{
-    /* background-color: whitesmoke; */
+    font-weight: 600;
+    background-color: rgba(236, 229, 221, 0.749);
     border-radius: 10px;
     padding: 10px;
     border: none;
@@ -138,3 +140,6 @@ input{
 #close{
     cursor: pointer;
 }
+
+
+

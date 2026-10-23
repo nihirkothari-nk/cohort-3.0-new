@@ -9,7 +9,9 @@ creatBtn.addEventListener("click",()=>{
     formdiv.style.display = "flex";
 });
 
-const productsArr =[];
+const productsArr = JSON.parse(localStorage.getItem("item")) || [];
+
+
 let updateIndex = null;
 
 const ui = ()=>{
@@ -32,7 +34,7 @@ productsArr.forEach((elem,index)=>{
         </div>`
 })
 };
-
+ui()
 
 closeBtn.addEventListener("click",()=>{
     formdiv.style.display = "none"
@@ -65,9 +67,11 @@ let obj = {
 
 if(updateIndex != null){
     productsArr[updateIndex]=obj;
+    localStorage.setItem("item",JSON.stringify(productsArr))
     updateIndex = null;
 }else{
     productsArr.push(obj);
+    localStorage.setItem("item",JSON.stringify(productsArr))
 }
 
 
@@ -93,5 +97,43 @@ const updateProduct = (name)=>{
 
 const deleteProduct = (index) => {
     productsArr.splice(index, 1);
+    localStorage.setItem("item", JSON.stringify(productsArr));
     ui();
 };
+
+
+
+
+/* local storage */
+
+
+// localStorage.setItem("name","Nihir Kothari")
+// let get = localStorage.getItem("name")
+// console.log(get)
+
+
+// let Data = [
+//     {name:"Virat_Kohli",
+//     age:37,
+//     playing_style:"Batter",
+//     country:"India"},
+    
+//     {name:"ABD",
+//     age:41,
+//     playing_style:"Batter",
+//     country:"South_Africa"},
+
+//     {name:"Josh_Hazelwood",
+//     age:37,
+//     playing_style:"Bowler",
+//     country:"Australia"}
+
+// ]
+
+
+// localStorage.setItem("cricketers",JSON.stringify(Data));
+
+// const lsd = localStorage.getItem("cricketers");
+
+// let value = JSON.parse(lsd)
+// console.log(value);
